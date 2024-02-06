@@ -47,7 +47,7 @@ curl -H "content-type: application/json" -X POST --data '{"id":0,"jsonrpc":"2.0"
 		println("DialContext-----err",err.Error())
 	}
 
-	da,err := client.GetFileDataByHash(context.TODO(),common.BytesToHash([]byte("2")))
+	da,err := client.GetFileDataByHash(context.TODO(),common.BytesToHash([]byte("0xxxxxxxx")))
 	if err != nil {
 		println("GetFileDataByHash---err",err.Error())
 	}
