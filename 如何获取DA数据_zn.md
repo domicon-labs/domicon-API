@@ -22,7 +22,7 @@
 返回一个对应的DA数据对象，如果没查询到就返回一个空值，DA数据对象结构如下：
 
 - Sender: DA数据的提交者地址
-- Submmiter: DA数据的广播者地址
+- Submitter: DA数据的广播者地址
 - Length: DA数据的长度
 - Index: DA数据的提交者的发送序号
 - Commitment: DA数据承诺，承诺由KZG算法生成与Data一一对应
@@ -68,7 +68,7 @@ curl -H "content-type: application/json" -X POST --data '{"id":0,"jsonrpc":"2.0"
 返回一个对应的DA数据对象，如果没查询到就返回一个空值，DA数据对象结构如下：
 
 - Sender: DA数据的提交者地址
-- Submmiter: DA数据的广播者地址
+- Submitter: DA数据的广播者地址
 - Length: DA数据的长度
 - Index: DA数据的提交者的发送序号
 - Commitment: DA数据承诺，承诺由KZG算法生成与Data一一对应
