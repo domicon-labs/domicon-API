@@ -103,8 +103,8 @@ object - A TxHashs obecjt
 
 object - A return object:
 
-- Flags  Array: - a Boolean list.
-
+- Flags  Array: - a DA data state Enumeration list.
+    - DA data state Enumeration: DataState_SAVE,DataState_DEL,DataState_UNKNOW 
  
 ### eth_batchSaveFileDataWithHashes
 

@@ -113,7 +113,7 @@ curl -H "content-type: application/json" -X POST --data '{"id":0,"jsonrpc":"2.0"
 用户通过原始的交易哈希获取对于DA数据的查询，无论这个DA数据已经磁盘化还是位于内存池中。
 
 #### 返回值
-返回一个是否拥有与原始交易哈希相对应的DA数据的bool值列表，true就是有，false就是没有。
+返回一个是否拥有与原始交易哈希相对应的DA数据的枚举值列表，枚举值包括：DataState_SAVE,DataState_DEL,DataState_UNKNOW。以DataState_SAVE为基础值0递增。DataState_SAVE表示DA数据已经磁盘化，DataState_DEL表示DA数据已经删除，DataState_UNKNOW表示DA数据状态未知。
 
 #### 调用方式
 1.方式一

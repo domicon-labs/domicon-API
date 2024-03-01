@@ -113,7 +113,7 @@ Get bulk DA data by batch raw transaction hash
 Users obtain queries for DA data through the original transaction hash, whether the DA data is disk or located in the memory pool.
 
 #### Returns Value
-A list of exchanged hands of the cloth, Truee did not, fake.
+Returns a list of enumerations that have DA data corresponding to the original transaction hash, including: DataState_SAVE, DataState_DEL, DataState_UNKNOW. The base value 0 is incremental with DataState_SAVE. DataState_SAVE says DA data has been disk, DataState_DEL indicates that DA data has been deleted, and DataState_UNKNOW indicates that the DA data status is unknown.
 
 #### Call Method
 1.Mode 1
